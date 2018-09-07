@@ -1,0 +1,21 @@
+{
+  "using_ios": true,
+  "using_android": false,
+  "firestore": false,
+  "realtimedb": false,
+  "remote_config": false,
+  "messaging": false,
+  "crashlytics": false,
+  "crash_reporting": false,
+  "storage": true,
+  "facebook_auth": false,
+  "google_auth": false,
+  "admob": false,
+  "invites": false,
+  "ml_kit": true,
+  "ml_kit_text_recognition": false,
+  "ml_kit_barcode_scanning": false,
+  "ml_kit_face_detection": false,
+  "ml_kit_image_labeling": true,
+  "ml_kit_custom_model": false
+}

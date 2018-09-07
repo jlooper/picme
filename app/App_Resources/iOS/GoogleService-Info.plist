@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>245300376598-oht9t6sko46s3cqgeu4so5uh8al1l3kk.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.245300376598-oht9t6sko46s3cqgeu4so5uh8al1l3kk</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDoFzSCQAyD-CYfNcku-YxA5wVozMXo5h0</string>
+	<key>GCM_SENDER_ID</key>
+	<string>245300376598</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.ladeezfirstmedia.picme</string>
+	<key>PROJECT_ID</key>
+	<string>picme-lfm</string>
+	<key>STORAGE_BUCKET</key>
+	<string>picme-lfm.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true></true>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false></false>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:245300376598:ios:79d000272a5c79ee</string>
+	<key>DATABASE_URL</key>
+	<string>https://picme-lfm.firebaseio.com</string>
+</dict>
+</plist>

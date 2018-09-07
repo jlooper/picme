@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "245300376598",
+    "firebase_url": "https://picme-lfm.firebaseio.com",
+    "project_id": "picme-lfm",
+    "storage_bucket": "picme-lfm.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:245300376598:android:79d000272a5c79ee",
+        "android_client_info": {
+          "package_name": "com.ladeezfirstmedia.picme"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "245300376598-no2gh1kgao1si0u2an4ku27fv0l75vg5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD5XatUPr4TzF6MU3tcyl00G99epbSnMCU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

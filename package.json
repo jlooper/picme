@@ -1,0 +1,48 @@
+{
+  "name": "picme",
+  "version": "1.0.0",
+  "description": "Beat the Machine!",
+  "author": "jlooper <jen.looper@gmail.com>",
+  "license": "MIT",
+  "nativescript": {
+    "id": "com.ladeezfirstmedia.picme",
+    "tns-ios": {
+      "version": "4.2.0"
+    },
+    "tns-android": {
+      "version": "4.2.0"
+    }
+  },
+  "dependencies": {
+    "vuex": "^3.0.1",
+    "nativescript-theme-core": "^1.0.4",
+    "nativescript-vue": "^2.0.0-alpha.2",
+    "tns-core-modules": "^4.2.0",
+    "nativescript-cardview": "^3.1.0",
+    "nativescript-cfalert-dialog": "^1.0.8",
+    "nativescript-fonticon": "^1.1.1",
+    "nativescript-plugin-firebase": "^6.4.0",
+    "nativescript-swipe-layout": "^1.0.5",
+    "nativescript-ui-sidedrawer": "^4.1.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "babel-loader": "^8.0.2",
+    "clean-webpack-plugin": "^0.1.19",
+    "copy-webpack-plugin": "^4.5.2",
+    "css-loader": "^1.0.0",
+    "mini-css-extract-plugin": "^0.4.1",
+    "nativescript-dev-webpack": "^0.15.0",
+    "nativescript-vue-template-compiler": "^1.3.1",
+    "nativescript-worker-loader": "~0.9.0",
+    "node-sass": "^4.9.2",
+    "sass-loader": "^7.1.0",
+    "uglifyjs-webpack-plugin": "~1.2.7",
+    "vue-loader": "^15.2.6",
+    "webpack": "^4.16.4",
+    "webpack-bundle-analyzer": "~2.13.1",
+    "webpack-cli": "^3.1.0"
+  }
+}
