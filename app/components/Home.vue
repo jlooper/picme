@@ -40,9 +40,7 @@
           
             <GridLayout rows="60,auto,4*,auto,auto" columns="*"> 
 
-            <Label row="0" col="0" class="title" :text="title"></Label> 
-						
-			
+            <Label row="0" col="0" class="title" :text="title"></Label>
 
             <Button row="1" style="height: 50" class="btnStart" :visibility="!count?'visible':'collapse'" @tap="countFiles" col="0" text="Ready? Start Game!"/>
 
@@ -98,7 +96,8 @@ const imageSourceModule = require('tns-core-modules/image-source');
 const fileSystemModule = require('tns-core-modules/file-system');
 const folder = fileSystemModule.knownFolders.currentApp();
 import { mapActions } from 'vuex';
-import { CFAlertDialog, DialogOptions, CFAlertStyle } from 'nativescript-cfalert-dialog';
+import { Feedback, FeedbackType, FeedbackPosition } from 'nativescript-feedback';
+import { Color } from 'tns-core-modules/color';
 import { Images } from '../data/types';
 
 export default {
@@ -184,31 +183,19 @@ export default {
 					msg = "It's a 👩 🤖 tie!";
 				}
 
-				let cfalertDialog = new CFAlertDialog();
+				let feedback = new Feedback();
 
-				let options = {
-					dialogStyle: CFAlertStyle.NOTIFICATION,
+				feedback.show({
 					title: msg,
-					message: 'Want to try another set of images?',
-					backgroundBlur: true,
-					onDismiss: function(dialog) {
-						console.log('Dialog was dismissed');
+					message: 'Try another set of images!',
+					position: FeedbackPosition.Bottom, // iOS only
+					messageColor: new Color('#6a5cff'),
+					duration: 3000,
+					backgroundColor: new Color('#4fffe8'),
+					onTap: () => {
+						feedback.hide();
 					},
-					buttons: [
-						{
-							text: 'Absolutely!',
-							buttonStyle: CFAlertActionStyle.POSITIVE,
-							buttonAlignment: CFAlertActionAlignment.END,
-							textColor: '#000000',
-							backgroundColor: '#6A5CFF',
-							backgroundBlur: false,
-							onClick: function(response) {
-								console.log(response);
-							},
-						},
-					],
-				};
-				cfalertDialog.show(options);
+				});
 
 				this.$store.dispatch('clearCount');
 				this.$store.dispatch('clearScore');
