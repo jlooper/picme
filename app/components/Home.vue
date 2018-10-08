@@ -35,17 +35,26 @@
         <StackLayout row="1" col="0"></StackLayout>
 
         <StackLayout row="0" col="0" rowSpan="2">
-
-			
-          
-            <GridLayout rows="60,auto,4*,auto,auto" columns="*"> 
+ 
+         <GridLayout rows="60,auto,auto,4*,auto,auto" columns="*"> 
 
             <Label row="0" col="0" class="title" :text="title"></Label>
 
-            <Button row="1" style="height: 50" class="btnStart" :visibility="!count?'visible':'collapse'" @tap="countFiles" col="0" text="Ready? Start Game!"/>
+			<StackLayout :visibility="!count?'visible':'collapse'" row="1" orientation="horizontal"  horizontalAlignment="center">
+              
+				<StackLayout width="150" height="150" style="margin-right:5; padding: 5; border-radius: 75; background-color: white">
+					<Image :src="'~/assets/images/'+choice1+'.jpg'" stretch="aspectFit"/>
+				</StackLayout>
+					
+				<StackLayout width="150" height="150" style="margin-left: 5; padding: 5; border-radius: 75; background-color: white">
+					<Image :src="'~/assets/images/'+choice2+'.jpg'" stretch="aspectFit"/>
+				</StackLayout>
+					
+			</StackLayout>
 
+			<Button row="2" style="height: 50; margin-top: 20" class="btnStart" :visibility="!count?'visible':'collapse'" @tap="countFiles" text="Ready? Start Game!"/>
             
-            <SwipeLayout row="2" col="0" v-for="item in count" :key="item" @swipeLeft="swipeCallback(choice1,$event,item)" @swipeRight="swipeCallback(choice2,$event,item)">                             
+            <SwipeLayout row="3" col="0" v-for="item in count" :key="item" @swipeLeft="swipeCallback(choice1,$event,item)" @swipeRight="swipeCallback(choice2,$event,item)">                             
               
               <GridLayout rows="4*,2*,4*" columns="*">
 
@@ -78,9 +87,9 @@
             
             </SwipeLayout>
 
-            <StackLayout style="horizontal-align: center;padding-bottom: 10"  :visibility="!count?'collapse':'visible'"  orientation="horizontal" row="3">
-              <Label :text="'👩‍ '+humanScore"/>
-              <Label :text="'🤖 '+botScore"/>
+            <StackLayout style="horizontal-align: center;padding-bottom: 10" orientation="horizontal" row="4">
+              <Label class="emoji-small" :text="'👩‍ '+humanScore"/>
+              <Label class="emoji-small" :text="'🤖 '+botScore"/>
             </StackLayout>
 
                   
@@ -298,9 +307,11 @@ export default {
 }
 
 .emoji {
-	font-size: 50;
+	font-size: 75;
 }
-
+.emoji-small {
+	font-size: 30;
+}
 .response {
 	margin: 5;
 }

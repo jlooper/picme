@@ -7,7 +7,7 @@
 	"nativescript": {
 		"id": "com.ladeezfirstmedia.picme",
 		"tns-ios": {
-			"version": "4.3.0"
+			"version": "4.3.0-2018-10-05-115910-01"
 		},
 		"tns-android": {
 			"version": "next"
